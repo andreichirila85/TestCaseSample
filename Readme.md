@@ -89,20 +89,3 @@ Steps to reproduce:
 Expected results:
 The homepage of the app is opened. New passwords fields are not present as expected. User is unable to change the forgotten password. (BUG)
 
-Bug report
-
-In the event of forgotten password, user is unable to choose a new password.
-
-Steps to reproduce:
-1. Open app and tap " Forgot your password ? ".
-2. Enter valid email in order to receive a new password.
-3. Check email an tap on reset your password button.
-
-Expected results:
-After the homepage is displayed, new passwords fields should be present and user should be able to choose a new password.
-
-Actual results:
-After taping the reset password button from the email received, the homepage is displayed, old password cannot be changed with a new one.
-
-Severity: major.
-
