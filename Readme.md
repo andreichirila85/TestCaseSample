@@ -12,7 +12,7 @@ Steps to reproduce:
 Expected results:		
 The Vivino icon is present, the app is opened.
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------
 
 Incoming calls interruptions
 
@@ -20,15 +20,15 @@ Verify that the app returns to the same point before receiving the call.
 Requires a second phone to call the test device. App must be installed and running.
 
 Steps to reproduce:
-1.Initiate a call from a second phone to the test device.
-2.Answer the call on the test device and conduct a conversation.
-3.End the call.
-4.Check if the app returns to its previous state.
+1. Initiate a call from a second phone to the test device.
+2. Answer the call on the test device and conduct a conversation.
+3. End the call.
+4. Check if the app returns to its previous state.
 
 Expected results:
 The app successfully returns to the same point before receiving the call.
 
------------------------------------------------------------------------------
+---------------------------------------------------------------
 
 Sign-up with valid email and password
 
@@ -43,7 +43,7 @@ Steps to reproduce:
 Expected results:
 User is signed up. A pop-up dialog box is dispayed whether the user prefers or not notifications.
 
-----------------------------------------------------------------------------------
+-----------------------------------------------------------------
 
 Logged out
 
@@ -59,7 +59,7 @@ Steps to reproduce:
 Expected results:
 User is succesfully logged out.
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------------------
 
 Scan a wine label in portrait mode
 
@@ -74,7 +74,7 @@ Steps to reproduce:
 Expected results:
 User successfully scanned a wine label in portrait mode.
 
------------------------------------------------------------------------------------
+--------------------------------------------------------------------
 
 Forgotten password
 
