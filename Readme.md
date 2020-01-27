@@ -1,7 +1,8 @@
 # TestCaseSample
 Install the Vivino app from App Store
 
-Verify if the application is installed without errors.
+Verify that the application is installed without errors.
+
 Requires iOS 10.0 or later.	
 
 Steps to reproduce:
@@ -17,6 +18,7 @@ The Vivino icon is present, the app is opened.
 Incoming calls interruptions
 
 Verify that the app returns to the same point before receiving the call.
+
 Requires a second phone to call the test device. App must be installed and running.
 
 Steps to reproduce:
@@ -47,7 +49,8 @@ User is signed up. A pop-up dialog box is dispayed whether the user prefers or n
 
 Logged out
 
-Verify if user remains logged out when he choose to sign out.
+Verify that user remains logged out when he choose to sign out.
+
 Requires user to be logged in.
 
 Steps to reproduce:
@@ -61,9 +64,26 @@ User is succesfully logged out.
 
 -------------------------------------------------------------------
 
+Access camera
+
+Verify that user is able to access apps camera.
+
+Steps to reproduce:
+
+1. Open app and tap the on-screen camera icon.
+2. Tap on Open Settings.
+3. Allow app to access camera by switching camera's position from OFF to ON.
+4. Open the app again and tap the on-screen camera icon.
+
+Expected results:
+User is able to access apps camera in order to scan a wine.
+
+-----------------------------------------------------------------
+
 Scan a wine label in portrait mode
 
 Verify that user can successfully scan a wine label in portrait mode.
+
 Requires user to be logged in.
 
 Steps to reproduce:
@@ -76,16 +96,13 @@ User successfully scanned a wine label in portrait mode.
 
 --------------------------------------------------------------------
 
-Forgotten password
+Undoing an action
 
-Verify the "Forgot your password" functionality.
-App must be running.
+Verify that user is able to undo an action when any wrong item is touched.
 
 Steps to reproduce:
-1. Tap on "Forgot your password ? ".
-2. Enter correct email address into required field and tap Send.
-3. Check the email received and reset the password by taping on the link.
+1. Randomly search for a wine and tap on it.
+2. Tap back button from top left corner or swipe right in order to undo the action.
 
 Expected results:
-The homepage of the app is opened. New passwords fields are not present as expected. User is unable to change the forgotten password. (BUG)
-
+User is able to undo an action.
