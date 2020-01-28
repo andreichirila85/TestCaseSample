@@ -106,3 +106,55 @@ Steps to reproduce:
 
 Expected results:
 User is able to undo an action.
+
+-----------------------------------------------------------------------
+
+Verify if temperature in “Current weather data” service is correct
+
+Check if the temperature in “Current weather data” service response is the same using a different weather website.
+
+Steps to reproduce:
+1. Open Postman.
+2. Add “Current weather data” service URL in request URL field. (api.openweathermap.org/data/2.5/weather?q=Brasov&units=metric&APPID=b877cc138ceeb7015615b7b122be7958)
+3. Click Send button.
+4. In the JSON response scroll to main/temp.
+5. Open Yahoo Weather and compare temperatures. (https://www.yahoo.com/news/weather/romania/brasov/brasov-868025/)
+
+Expected results:
+
+Temperatures from JSON response is the same with the temperature in Yahoo Weather.
+
+------------------------------------------------------------------------
+
+Verify if the temperatures units in "Current weather data" are correct
+
+Check if the temperatures units in "Current weather data" service response are correct using an online conversion temperatures calculator.
+
+Steps to reproduce:
+1. Open Postman.
+2. Add "Current weather data" service in URL in request URL field. (api.openweathermap.org/data/2.5/weather?q=London&APPID=b877cc138ceeb7015615b7b122be7958)
+3. Click Send button.
+4. In the JSON response scroll to main/temp and retain the Kelvin temperature.
+5. Add parameter units with value metric.
+6. Click Send button.
+7. In the JSON response scroll to main/temp and retain the Celsius temperature.
+8. Open an online conversion temperatures calculator and convert the retained temperatures from Kelvin into Celsius. (http://www.onlineconversion.com/temperature.htm)
+
+Expected results:
+
+Temperatures units from JSON response are correct after conversion from Kelvin to Celsius.
+
+-----------------------------------------------------------------------
+
+Verify APIs call if no city name added 
+
+Check if APIs call return an error message if no city name added.
+
+Steps to reproduce:
+1. Open Postman.
+2. Add (api.openweathermap.org/data/2.5/weather?q=&APPID=b877cc138ceeb7015615b7b122be7958) service in URL field.
+3. Click Send button.
+
+Expected results:
+
+In the JSON response, message "Nothing to geocode" is displayed.
